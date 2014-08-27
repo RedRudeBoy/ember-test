@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EmberTest</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ember-test.css">
+  </head>
+  <body>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ember-test.js"></script>
+    <script>
+      window.EmberTestENV = require('ember-test/config/environment')['default'];
+      window.EmberENV = window.EmberTestENV.EmberENV;
+      window.EmberTest = require('ember-test/app')['default'].create(EmberTestENV.APP);
+    </script>
+  </body>
+</html>
